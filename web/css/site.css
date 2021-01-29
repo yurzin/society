@@ -1,0 +1,223 @@
+html,
+body {
+    height: 100%;
+}
+
+.col-lg-4,
+.col-md-5,
+.col-lg-8,
+.col-md-7 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 0px 20px 0px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+#previewPhoto {
+    height: 150px;
+    width: auto;
+}
+
+.main-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 56px;
+    color: #262a36;
+}
+
+.profile-foto img {
+    width: 353px;
+    height: auto;
+    object-fit: fill;
+    border-radius: 4px;
+}
+
+.profile-info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #394347;
+}
+
+.profile-info__check-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #262a36;
+}
+
+.profile-info__block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+.profile-info__block-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info__block-left img {
+    margin-right: 8px;
+}
+
+.profile-btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.link-orange-btn {
+    display: inline-block;
+    text-align: center;
+}
+
+.link-orange-btn:hover,
+.link-blue-btn:hover {
+    text-decoration: none;
+}
+
+.orange-btn:focus {
+    outline: none;
+}
+
+.orange-btn:hover {
+    background: #272727;
+    transition: 0.3s;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.orange-btn:disabled {
+    background: #e5e5e5;
+    color: #ffffff;
+}
+
+.orange-btn {
+    padding: 8px 32px;
+    background: #6f43d6;
+    box-shadow: 0px 8px 17px rgba(85, 62, 17, 0.12);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
