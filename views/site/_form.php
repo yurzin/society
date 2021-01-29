@@ -25,7 +25,7 @@ use yii\widgets\MaskedInput;
     endif; ?>
 
     <?= $form->field($model, 'imageFile')->fileInput(['onchange' => 'loadPreview()']) ?>
-    <?php \yii\helpers\VarDumper::dump($form->field($model, 'imageFile'), 3, true) ?>
+
     <?= $form->field($model, 'last_name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
