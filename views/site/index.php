@@ -6,10 +6,11 @@ use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SearchModel */
-/* @var $dataProvider yii\data\ActiveDataProvider */
+/* @var $dataProvider app\controllers\SiteController */
 
 $this->title = 'Пользователи';
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
 
 <div class="users-index">

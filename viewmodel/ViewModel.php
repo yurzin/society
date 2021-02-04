@@ -17,7 +17,6 @@ class ViewModel
     public function __construct($users)
     {
         $this->users = $users;
-
     }
 
     /**

@@ -6,7 +6,6 @@ use Yii;
 use app\viewModel\ViewModel;
 use app\models\Users;
 use app\models\SearchModel;
-use yii\helpers\VarDumper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

@@ -28,6 +28,12 @@ class m210127_073615_create_table_users extends Migration
                 'phone' => $this->string(100),
                 'about' => $this->text()
             ]);
+
+        $this->createIndex(
+            'idx-users-posts_id',
+            'users',
+            'id'
+        );
     }
 
     /**
@@ -38,19 +44,4 @@ class m210127_073615_create_table_users extends Migration
         $this->dropTable('{{%users}}');
 
     }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m210127_073615_create_table_users cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

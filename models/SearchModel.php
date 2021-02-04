@@ -50,6 +50,9 @@ class SearchModel extends Users
         $dataProvider = new ActiveDataProvider(
             [
                 'query' => $query,
+                'pagination' => [
+                    'pageSize' => 2,
+                ],
             ]
         );
 
