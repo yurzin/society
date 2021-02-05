@@ -11,6 +11,7 @@ class UsersApi extends Users
     {
         return [
             'id',
+            'photo',
             'last_name',
             'name',
             'city',
